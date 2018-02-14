@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:id="@+id/toolbarNewMed">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/cancel"
+                android:onClick="cancelNewMed" />
+
+            <TextView
+                android:id="@+id/textViewAddEditMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkGray"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="45dp"
+                android:text="@string/add_new_med" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/save"
+                android:onClick="saveNewMed" />
+
+
+        </LinearLayout>
+
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarNewMed"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/textViewDose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:text="@string/dose" />
+
+    <TextView
+        android:id="@+id/textViewDoseTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDose"
+        android:layout_below="@+id/textViewDose"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:text="@string/dosage_times" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewDose"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:hint="@string/hint_name"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editTextDose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/hint_dose"
+        android:layout_above="@+id/textViewDoseTimes"
+        android:layout_alignEnd="@+id/editTextName"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextDoseT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_dose_time"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignBottom="@+id/textViewDoseTimes"
+        android:layout_alignStart="@+id/editTextDose"
+        android:maxLength="7"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editTextDoseT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="7"
+        android:gravity="center"
+        android:layout_alignStart="@+id/editTextDoseT1"
+        android:layout_below="@+id/editTextDoseT1"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editTextDoseT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="7"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/editTextDoseT2"
+        android:layout_below="@+id/editTextDoseT2"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:ems="10"
+        android:inputType="time" />
+
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDoseTimes"
+        android:layout_below="@+id/editTextDoseT3"
+        android:layout_marginTop="51dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:text="@string/quantity" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_quant"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/textViewQuantity"
+        android:layout_alignStart="@+id/editTextDoseT3"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextName"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/buttonDeleteMed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/colorRed"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="deleteMed"
+        android:visibility="invisible"
+        android:text="@string/delete_med" />
+
+</RelativeLayout>

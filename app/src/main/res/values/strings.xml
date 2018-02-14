@@ -1,0 +1,64 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">Forget-Me-Now</string>
+
+    <!-- Toolbar strings -->
+    <string name="calendar_tooltip">Calendar</string>
+    <string name="today">Today</string>
+    <string name="medicine">Medicine</string>
+    <string name="settings">Settings</string>
+
+    <!-- Today page -->
+    <string name="no_meds_today">Add a medication by navigating to the medicine tab.</string>
+
+    <!-- Med page -->
+    <string name="add_med">+</string>
+    <string name="add_new_med">Add Medication</string>
+    <string name="edit_med">Edit Medication</string>
+    <string name="add_err">Please fill in all required information.</string>
+    <string name="add_err_format">Please check time formatting for dosages.</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="dose">Dose</string>
+    <string name="dosage_times">Dosage Times\n(Only 1 required)</string>
+    <string name="quantity">Quantity</string>
+    <string name="no_med">Press the ""+"" icon below to add medication.</string>
+    <string name="delete_med">Delete medication</string>
+
+    <!-- Delete strings -->
+    <string name="delete_alert_title">Deleting medication</string>
+    <string name="delete_alert_msg">This medicine will be removed from the medication list and
+        all reminders for this medicine will be canceled. Are you sure you want to stop taking
+        this medicine?</string>
+    <string name="yes">Delete this medication</string>
+    <string name="no">Cancel</string>
+
+    <!-- New Med hints -->
+    <string name="hint_name">Medication Name</string>
+    <string name="hint_dose">e.g. 3 pills</string>
+    <string name="hint_dose_time">e.g. 10:30pm</string>
+    <string name="hint_quant">e.g. 90 pills</string>
+
+    <!-- Notification Strings -->
+    <string name="nt_title">Forget-Me-Now Pill Reminder</string>
+    <string name="nt_txt">It is time to take your</string>
+
+    <!-- Main messages -->
+    <string name="msg_leftover_meds">Click medication to mark it as taken.</string>
+    <string name="msg_all_meds_taken">Today\'s medications have been taken.</string>
+
+    <!-- Settings strings -->
+    <string name="refill_reminders">Refill reminders</string>
+    <string name="refill_on1">Notification when</string>
+    <string name="refill_on2">or fewer pills remaining.</string>
+    <string name="notification">Notifications</string>
+
+    <!-- Msg checkbox content descriptions -->
+    <string name="unchecked">unchecked</string>
+    <string name="checked">checked</string>
+
+    <!-- Calendar page strings -->
+    <string name="medsTaken">Medications Taken</string>
+    <string name="noMedsCal">NO MEDICATIONS</string>
+</resources>

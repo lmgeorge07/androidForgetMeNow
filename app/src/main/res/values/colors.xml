@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Splash screen colors -->
+    <color name="colorGray">#5e646d</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!-- Main colors -->
+    <color name="colorDarkGray">#3e3e3e</color>
+
+    <!-- Toolbar background -->
+    <color name="colorLightishGray">#a3a3a3</color>
+    <color name="colorLightGray">#f6f6f6</color>
+</resources>

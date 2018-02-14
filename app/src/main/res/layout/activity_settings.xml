@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textViewSetRR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorDarkGray"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:text="@string/settings" />
+
+    <View
+        android:id="@+id/med_separator_line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/textViewSetRR"
+        android:background="@color/colorLightishGray"/>
+    <Switch
+        android:id="@+id/switchRefillReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorLightishGray"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/med_separator_line"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/refill_reminders" />
+
+    <!-- Horizontal line at toolbar border -->
+    <View
+        android:layout_above="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightishGray"
+        android:id="@+id/view" />
+
+    <TextView
+        android:id="@+id/textViewSetMsg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchRefillReminder"
+        android:layout_alignStart="@id/switchRefillReminder"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorGray"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/refill_on1" />
+
+    <TextView
+        android:id="@+id/textViewSetMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_below="@+id/switchRefillReminder"
+        android:layout_toRightOf="@id/editTextRefillNum"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorGray"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/refill_on2"  />
+    <EditText
+        android:id="@+id/editTextRefillNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewSetMsg1"
+        android:layout_toEndOf="@+id/textViewSetMsg1"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:ems="3"
+        android:inputType="number" />
+    <Switch
+        android:id="@+id/switchNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightishGray"
+        android:fontFamily="sans-serif-smallcaps"
+        android:switchPadding="37dp"
+        android:layout_alignStart="@+id/textViewSetMsg1"
+        android:layout_below="@+id/editTextRefillNum"
+        android:layout_marginTop="21dp"
+        android:text="@string/notification" />
+
+</RelativeLayout>

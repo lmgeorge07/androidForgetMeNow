@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calContainer"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <CalendarView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/calView"
+        android:layout_above="@id/relCalMsg"
+        android:focusedMonthDateColor="@color/colorPrimary"
+        android:weekNumberColor="@color/colorDarkGray"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+    </CalendarView>
+
+    <!-- Horizontal line at toolbar border -->
+    <View
+        android:layout_above="@id/relCalMsg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightishGray"
+        android:id="@+id/viewCalLine" />
+
+
+    <RelativeLayout
+        android:id="@+id/relCalMsg"
+        android:layout_above="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TextView
+            android:id="@+id/textViewCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGray"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:text="@string/medsTaken"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <View
+            android:layout_below="@id/textViewCal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLightishGray"
+            android:id="@+id/viewBelowList" />
+
+        <ScrollView
+            android:layout_below="@id/viewBelowList"
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fillViewport="true">
+            <TextView
+                android:id="@+id/textViewCalList"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"/>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <!-- Horizontal line at toolbar border -->
+    <View
+        android:layout_above="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightishGray"
+        android:id="@+id/view" />
+
+</RelativeLayout>

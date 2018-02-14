@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textViewDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorDarkGray"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp" />
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_marginStart="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDay"
+        android:layout_below="@+id/textViewDay"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorGray"
+        android:textSize="14sp"/>
+    <ImageButton
+        android:id="@+id/calendarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/textViewDay"
+        android:layout_marginEnd="20dp"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:onClick="expandCalendar" />
+    <View
+        android:id="@+id/border_top"
+        android:layout_below="@id/textViewDate"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="@color/colorLightishGray" />
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/empty_text_view"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="30sp"
+        android:text="@string/no_meds_today" />
+
+    <!-- Horizontal line at toolbar border -->
+    <View
+        android:layout_above="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightishGray"
+        android:id="@+id/view" />
+
+</RelativeLayout>

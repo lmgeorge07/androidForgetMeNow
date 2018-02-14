@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/medicine_btn"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:alpha="0.7"
+                    android:onClick="goToMedicineActivity"
+                    android:src="@android:drawable/ic_menu_agenda" />
+                <TextView
+                    android:id="@+id/textViewMedLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/colorGray"
+                    android:textSize="10sp"
+                    android:text="@string/medicine"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/today_toolbar_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:alpha="0.7"
+                    android:onClick="goToToday"
+                    android:src="@android:drawable/ic_menu_today" />
+                <TextView
+                    android:id="@+id/textViewTodayLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/colorGray"
+                    android:textSize="10sp"
+                    android:text="@string/today"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/settings_btn"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:alpha="0.7"
+                    android:onClick="goToSettings"
+                    android:src="@android:drawable/ic_menu_preferences" />
+                <TextView
+                    android:id="@+id/textViewSettingLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/colorGray"
+                    android:textSize="10sp"
+                    android:text="@string/settings"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+</Toolbar>

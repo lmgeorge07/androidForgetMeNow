@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_med_list"
+    android:layout_width="match_parent" android:layout_height="60dp"
+    android:onClick="editMed" android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/list_view_med_editable_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps">
+    </TextView>
+    <TextView
+        android:id="@+id/list_view_med_quant_editable_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_view_med_editable_btn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGray"
+        android:fontFamily="sans-serif-smallcaps" >
+    </TextView>
+
+</RelativeLayout>
